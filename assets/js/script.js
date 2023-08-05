@@ -1,16 +1,15 @@
 //Eventos clique2
 function clicou(){
-    const teste = document.querySelector("#teste1");
-    const ul = teste1.querySelector('ul');
+    const input = document.querySelector('input');
+    const botao = document.querySelector('.botao');
 
-    let newUl = document.createElement('ul');
-    for(let i = 1; i <= 5; i++){
-        let newLi = document.createElement('li');
-        newLi.innerHTML = "Item add";
-        newUl.append(newLi);
+    if (input.getAttribute('type') === 'text'){
+        input.setAttribute('type', 'password');
+        botao.innerText = "Mostrar Senha";
+    }else{
+        input.setAttribute('type', 'text');
+        botao.innerText = "Ocultar Senha";
     }
-
-    ul.after(newUl);
 }
 
 /*
