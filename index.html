@@ -10,7 +10,13 @@
 
     <div id="teste1">
         <ul>
-            <li>Item 1</li>
+            <li
+                style="
+                    background-color: lightgreen;
+                    padding: 3px;
+                    border-radius: 3px;
+                "
+            >Item 1</li>
             <li>Item 2</li>
         </ul>
     </div>
@@ -21,12 +27,14 @@
         </ul>
     </div>
 
+    <p style="
+        margin-top: 3px;
+        margin-bottom: 2px;
+    ">VER NO CONSOLE.LOG</p>
     <input
         type="text"
-        placeholder="Digite 1 senha qualquer"
-        class="input"
-        name="algo"
-     >
+        placeholder="Digite algo aqui"
+    >
 
     <button type="submit" style="
         border-radius: 3px;
@@ -35,9 +43,11 @@
         font-family: finger paint;
     "
 
-    class="botao"
+    class="botao azul"
     onclick="clicou()"
     >Clique aqui</button>
+
+    <p id="imprimir"></p>
 
     <script src="assets/js/script.js"></script>
 </body>

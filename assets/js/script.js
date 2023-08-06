@@ -1,16 +1,14 @@
-//Eventos clique2
-function clicou(){
-    const input = document.querySelector('input');
-    const botao = document.querySelector('.botao');
-
-    if (input.getAttribute('type') === 'text'){
-        input.setAttribute('type', 'password');
-        botao.innerText = "Mostrar Senha";
-    }else{
-        input.setAttribute('type', 'text');
-        botao.innerText = "Ocultar Senha";
-    }
+//Mostrar teclas apertadas
+function soltou(e){
+    console.log('TECLA APERTADA '+e.code);
+    console.log('SHIFT? '+e.shiftKey);
+    console.log('CTRL? '+e.ctrlKey);
+    console.log('ALT? '+e.altKey);
+    console.log('--');
 }
+
+const input = document.querySelector('input');
+input.addEventListener('keyup', soltou);
 
 /*
 ->3 períodos -> JavaScript Vanilla velocidade 2x
