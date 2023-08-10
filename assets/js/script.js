@@ -1,25 +1,21 @@
-//Exercício1: add UL por 1 input text
-const input = document.querySelector('input');
-const lista = document.querySelector('ul');
+//Orientação a objetos em JS
+//Classes: Costructors e This
+class Person {
 
-function handleKeyUp(e){
-    if(e.key === 'Enter'){
-        const newLi = document.createElement('li');
-        newLi.innerHTML = input.value;
-        lista.appendChild(newLi);
+    age = 0;
 
-        input.value = '';
+    constructor(name){
+        this.name = name;
     }
 }
 
-input.addEventListener('keyup', handleKeyUp);
+let p1 = new Person("João");
+let p2 = new Person("Maria");
+let p3 = new Person("Pedro");
 
+p1.age = 20;
 
-/*
-->3 períodos -> JavaScript Vanilla velocidade 2x
-->De manhã até de tarde Node (NodeJS + SQL + Express) + React.
-->De manhã até de tarde Node (NodeJS + SQL + Express) + Next.
-->De manhã até de tarde Node (NodeJS + SQL + Express) + Vue.
-->De manhã até de tarde Node (NodeJS + SQL + Express) + Angular.
-*/
+console.log(`P1 = ${p1.name} tem ${p1.age} anos`);
+console.log(`P2 = ${p2.name} tem ${p2.age} anos`);
+console.log(`P3 = ${p3.name} tem ${p3.age} anos`);
 
