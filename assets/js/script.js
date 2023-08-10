@@ -1,14 +1,19 @@
-//Mostrar teclas apertadas
-function soltou(e){
-    console.log('TECLA APERTADA '+e.code);
-    console.log('SHIFT? '+e.shiftKey);
-    console.log('CTRL? '+e.ctrlKey);
-    console.log('ALT? '+e.altKey);
-    console.log('--');
+//Exercício1: add UL por 1 input text
+const input = document.querySelector('input');
+const lista = document.querySelector('ul');
+
+function handleKeyUp(e){
+    if(e.key === 'Enter'){
+        const newLi = document.createElement('li');
+        newLi.innerHTML = input.value;
+        lista.appendChild(newLi);
+
+        input.value = '';
+    }
 }
 
-const input = document.querySelector('input');
-input.addEventListener('keyup', soltou);
+input.addEventListener('keyup', handleKeyUp);
+
 
 /*
 ->3 períodos -> JavaScript Vanilla velocidade 2x
