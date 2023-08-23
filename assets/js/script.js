@@ -1,30 +1,21 @@
-//POO: Herança
+//Pogramação Funcional: Herança
 
-class Person{
-    age = 0;
-
-    constructor(name){
-        this.name = name;
-    }
-
-    sayHi() {
-        console.log(`${this.name} diz: oi!`);
-    }
+const defaultUser = {
+    name: '',
+    email: '',
+    level: 1
 }
 
-class Student extends Person{
-    constructor(name, id){
-        super(name);
-        this.id = id;
-    }
-
-    sayHi(){
-        console.log(`${this.name} diz agora: olá!`);
-    }
+let user1 = {
+    ...defaultUser,
+    name: 'Jotta',
+    email: 'emailteste@contato.com'
 }
 
-let p1 = new Student("Jotta", 1);
+let admin1 = {
+    name: 'CEO1',
+    email: 'qualqueradmin@teste.com',
+    level: 2
+}
 
-console.log(`${p1.name} tem ${p1.age} e matrícula #${p1.id}`);
-p1.sayHi();
-
+console.log(user1, admin1);
