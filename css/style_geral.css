@@ -1,0 +1,12 @@
+.buttonGeral{
+    border-radius: 5px;
+    border: solid 5px lightslategray;
+    font-weight: bold;
+    font-family: finger paint;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: lightslategray;
+    background-color: #ccc;
+}
