@@ -17,13 +17,20 @@
 
     <p>Veja no console</p>
 
-    <img src="images/cachorro.jpg" alt="animais" class="imagem"><br />
-    <button onclick="trocarImagem('cachorro.jpg')" class="buttonGeral">
+    <img src="images/cachorro.jpg" data-animal="Cachorro"
+    alt="animais" class="imagem">
+    <br />
+
+    <button onclick="trocarImagem('cachorro.jpg', 'Cachorro')" class="buttonGeral">
         Cachorro
     </button>
 
-    <button onclick="trocarImagem('gato.jpg')" class="buttonGeral">
+    <button onclick="trocarImagem('gato.jpg', 'Gato')" class="buttonGeral">
         Gato
+    </button>
+
+    <button class="buttonGeral" onclick="pegarAnimal()">
+        Qual é o animal.
     </button>
 
     <script src="assets/js/script.js"></script>
