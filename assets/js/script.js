@@ -1,12 +1,7 @@
 //Metódos de String
 
-let nome = "Jotta Sobrenome Teste";
+let listFeira = "Ovos, Trigo, Alface, Tomate, Pão Francês, Maracujá";
 
-let resultado = nome.slice(-17, -10);
-console.log(resultado);
-
-resultado = nome.substr(6, 16);
-console.log(resultado);
-
-resultado = nome.substring(6, 16);
+let resultado = listFeira.split(', ');
+console.log(listFeira);
 console.log(resultado);
