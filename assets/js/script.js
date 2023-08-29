@@ -1,15 +1,12 @@
-//Manipulando atributos
+//Metódos de String
 
-function trocarImagem(filename, animalName){
-    document.querySelector('.imagem')
-    .setAttribute('src', 'images/'+filename);
-    document.querySelector('.imagem')
-    .setAttribute('data-animal', animalName);
-}
+let nome = "Jotta Sobrenome Teste";
 
-function pegarAnimal(){
-    let animal = document.querySelector('.imagem')
-    .getAttribute('data-animal');
+let resultado = nome.slice(-17, -10);
+console.log(resultado);
 
-    alert("O animal é: "+animal);
-}
+resultado = nome.substr(6, 16);
+console.log(resultado);
+
+resultado = nome.substring(6, 16);
+console.log(resultado);
