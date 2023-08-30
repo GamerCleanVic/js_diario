@@ -1,17 +1,11 @@
-//Metódos de Numbers
+//Metódos de Arrays 2
 
-let num1 = 10;
+let lista = ['Ovo', 'Farinha', 'Corante', 'Massa'];
 
-let res = num1;
-console.log(res,`${typeof res}`);
+console.log(lista);
+lista.push('Jaca');
 
-res = num1.toString();
-console.log(res,`${typeof res}`);
+lista[2] = 'Leite';
 
-res = parseInt(num1) + 2;
-console.log(res,`${typeof res}`);
-
-num1 = '11.4353535345';
-res = parseFloat(num1);
-res = res.toFixed(2);
-console.log(res,`${typeof res}`);
+let res = lista;
+console.log(res);
