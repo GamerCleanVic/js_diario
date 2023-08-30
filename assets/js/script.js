@@ -1,7 +1,17 @@
-//Metódos de String
+//Metódos de Numbers
 
-let listFeira = "Ovos, Trigo, Alface, Tomate, Pão Francês, Maracujá";
+let num1 = 10;
 
-let resultado = listFeira.split(', ');
-console.log(listFeira);
-console.log(resultado);
+let res = num1;
+console.log(res,`${typeof res}`);
+
+res = num1.toString();
+console.log(res,`${typeof res}`);
+
+res = parseInt(num1) + 2;
+console.log(res,`${typeof res}`);
+
+num1 = '11.4353535345';
+res = parseFloat(num1);
+res = res.toFixed(2);
+console.log(res,`${typeof res}`);
