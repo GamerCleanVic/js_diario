@@ -1,22 +1,20 @@
-//Metódos de Arrays 2
+//Intervalos
+let timer;
+function comecar(){
+    timer = setInterval(showTime, 1000);
+}
+function parar(){
+    clearInterval(timer);
+}
 
-let lista = ['Ovo', 'Farinha', 'Corante', 'Massa'];
-let lista2 = ['Prato', 'Liquidificador', 'Forma'];
 
-console.log(lista);
-lista.push('Jaca');
+function showTime(){
+    let data = new Date();
+    let hora = data.getHours();
+    let minutos = data.getMinutes();
+    let segundos = data.getSeconds();
 
-lista[2] = 'Leite';
+    let textao = hora+" : "+minutos+" : "+segundos;
 
-let res = lista;
-console.log(res);
-
-lista.splice(4, 1);
-console.log(res);
-
-res = lista.concat(lista2);
-console.log(res);
-res.sort();
-console.log(res);
-res.reverse();
-console.log(res);
+    document.querySelector('.teste1').innerHTML = textao;
+}
