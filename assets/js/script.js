@@ -1,9 +1,9 @@
-function mostrar(){
-    let imagem = document.getElementById('imagem').files[0];
+function addSquares(a, b){
+    const square = (x) => x*x;
 
-    let img = document.createElement('img');
-    img.src = URL.createObjectURL(imagem);
-    img.width = 360;
-
-    document.getElementById('area').appendChild(img);
+    let sqrA = square(a);
+    let sqrB = square(b);
+    return sqrA + sqrB;
 }
+
+console.log(addSquares(2, 3));
