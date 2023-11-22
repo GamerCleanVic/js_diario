@@ -1,9 +1,12 @@
-function addSquares(a, b){
-    const square = (x) => x*x;
-
-    let sqrA = square(a);
-    let sqrB = square(b);
-    return sqrA + sqrB;
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
 }
 
-console.log(addSquares(2, 3));
+let p1 = new Person("Jõao", 20);
+let p2 = new Person("Maria", 30);
+let p3 = new Person("Pedro", 40);
+
+console.log("Nome: "+p1.name, "\nIdade: "+p1.age);
