@@ -1,28 +1,14 @@
 class Person{
-    steps = 0;
     age = 0;
 
-    constructor(name, age){
+    constructor(name){
         this.name = name;
-        this.age = age;
-    }
-
-    takeAStep(){
-        this.steps++;
-    }
-
-    setAge(newAge){
-        if(typeof newAge == 'number'){
-            this.age = newAge;
-        }else{
-            console.log("Idade não aceita, só númeors!");
-        }
     }
 }
-
-let p1 = new Person("Jõao");
-let p2 = new Person("Maria");
-let p3 = new Person("Pedro");
-
-p1.setAge('dfgdfgfd');
-console.log(`${p1.name} tem ${p1.age} anos`);
+function createPerson(name, age){
+    p = new Person(name);
+    p.age = age;
+    return p;
+}
+let p1 = new createPerson("João", 21);
+console.log(`${p1.name} tem ${p1.age} anos.`);
