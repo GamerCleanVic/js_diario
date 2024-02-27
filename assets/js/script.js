@@ -2,10 +2,8 @@
 //->JavaScript: Manipulando elementos 2
 
 function clicou(){
-    console.log("Clicou no botão");
-}
+    const teste = document.querySelector("#teste");
+    const ul = teste.querySelector('ul');
 
-let botao = document.querySelector(".botao");
-botao.addEventListener('click', ()=>{
-    clicou();
-});
+    ul.outerHTML = "<b><ul><li>UL alterada</li></ul></b>";
+}
