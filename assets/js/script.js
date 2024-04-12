@@ -5,5 +5,5 @@ function clicou(){
     const teste = document.querySelector("#teste");
     const ul = teste.querySelector('ul');
 
-    ul.outerHTML = "<b><ul><li>UL alterada</li></ul></b>";
+    ul.outerHTML = "<b><ul><li>UL alterada Teste</li></ul></b>";
 }
