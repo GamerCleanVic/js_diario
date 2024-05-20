@@ -45,3 +45,17 @@
     font-family: Finger Paint, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
 }
+.textBox1{
+    border: solid 4px rgb(78, 27, 126);
+    border-radius: 5px;
+    color: green;
+}
+#imprimir2{
+    transition: 5s;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#imprimir2:hover{
+    transition: 2s;
+    color: lightgreen;
+}

@@ -1,15 +1,25 @@
 //Aula: Modulo 3
-//->JavaScript: Manipulando CSS
+//->JavaScript: O q é POO
 
-function clicou(){
-    const input = document.querySelector('input');
-    const botao = document.querySelector('.botao2');
+class Person{
+    age = 0;
+    steps = 0;
 
-    if(input.getAttribute('type') === 'text'){
-        input.setAttribute('type', 'password');
-        botao.innerText = 'Mostrar senha';
-    }else{
-        input.setAttribute('type', 'text');
-        botao.innerText = 'Ocultar senha';
+    constructor(name){
+        this.name = name;
+    }
+    takeAStep(){
+        this.steps++;
+    }
+    setAge(newAge){
+        this.age = newAge;
     }
 }
+
+let p1 = new Person("João");
+let p2 = new Person("Maria");
+let p3 = new Person("Pedro");
+
+p1.setAge(10);
+
+console.log(`${p1.name} tem ${p1.age} anos.`);
