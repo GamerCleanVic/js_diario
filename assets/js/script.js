@@ -1,17 +1,3 @@
-//Próxima Aula: Modulo 4
-//JavaScript: 19 - Funcional: Herança
+//Próxima Aula: Modulo 5
+//JavaScript: #4 - OComo uma API funciona?
 
-let person = {
-    name: 'Bonieky',
-    lastName: 'Lacerda',
-    age: 18,
-    getFullName(){
-        return `${this.name} ${this.lastName}`;
-    },
-    start(){
-        console.log('Deu start na pessoa!');
-    }
-}
-
-person.start();
-console.log(person.getFullName());
