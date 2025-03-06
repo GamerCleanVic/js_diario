@@ -1,8 +1,12 @@
 //Próxima Aula: Modulo 5
-//JavaScript Módulo 2: Ordenação de array
+//JavaScript Módulo 2: Iteração de array 1
 
-const fruits = ["Maçã", "Uva", "Laranja", "Banana"];
+let cars = [
+    { brand: "Fiat", year: 2022 },
+    { brand: "Bmw", year: 2018 },
+    { brand: "Ferrari", year: 2020}
+];
 
-console.log('Antes:', fruits);
-fruits[fruits.length -1] = "Pêra";
-console.log('Depois do +[0]:', fruits);
+cars.sort((a, b) => a.year - b.year);
+
+console.log(cars);
