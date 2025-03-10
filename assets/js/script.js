@@ -1,12 +1,12 @@
 //Próxima Aula: Modulo 5
-//JavaScript Módulo 2: Iteração de array 1
+//JavaScript Módulo : O que é DOM?
 
-let cars = [
-    { brand: "Fiat", year: 2022 },
-    { brand: "Bmw", year: 2018 },
-    { brand: "Ferrari", year: 2020}
-];
+let fruits = ['Banana', 'Laranja', 'Maçã', 'Pêra', 'Uva'];
 
-cars.sort((a, b) => a.year - b.year);
+fruits.pop();
 
-console.log(cars);
+if(fruits.includes('Uva')){
+  console.log('Tem uva sim!');
+}else{
+  console.log('Não tem uva!');
+}
