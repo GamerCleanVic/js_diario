@@ -1,14 +1,21 @@
 .buttonGeral{
     border-radius: 5px;
-    border: solid 5px lightslategray;
+    border: solid 5px darkgreen;
     font-weight: bold;
     font-family: finger paint;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    color: lightslategray;
+    color: darkgreen;
     background-color: #ccc;
+    transition: 2.3s;
+}
+.buttonGeral:hover{
+    transition: 1.2s;
+    color: #ccc;
+    background-color: darkgreen;
+    border: solid 5px #ccc;
 }
 .imagem{
     width: 21rem;
@@ -58,4 +65,28 @@
 #imprimir2:hover{
     transition: 2s;
     color: lightgreen;
+}
+#mensagem{
+  color: #ff3385;
+  transition: 1.7s;
+  animation: aparecer 3s forwards;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}#mensagem:hover{
+  color: #a64dff;
+  transition: 0.7s;
+}
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+    transition: 0.7s;
+  }50%{
+    opacity: 1;
+    transition: 0.7s;
+  }100%{
+    opacity: 0;
+    transition: 0.7s;
+  }
 }
