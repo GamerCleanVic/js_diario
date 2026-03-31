@@ -1,12 +1,15 @@
-//Próxima Aula: Modulo 5
-//JavaScript Módulo : O que é DOM?
+//Próxima Aula: Modulo 3
+//JavaScript aula : Manipulando o CSS
 
-let fruits = ['Banana', 'Laranja', 'Maçã', 'Pêra', 'Uva'];
-
-fruits.pop();
-
-if(fruits.includes('Uva')){
-  console.log('Tem uva sim!');
-}else{
-  console.log('Não tem uva!');
+function clicou(){
+  const input = document.querySelector('input');
+  const botao = document.querySelector('.botao');
+  
+  if(input.getAttribute('type') === 'text'){
+    input.setAttribute('type', 'password');
+    botao.innerText = 'Mostrar senha';
+  }else{
+    input.setAttribute('type', 'text');
+    botao.innerText = 'Ocultar senha';
+  }
 }
